@@ -132,15 +132,15 @@ def main():
     
     # Apartment loan inputs
     st.sidebar.subheader("🏢 Apartment Loan")
-    apt_principal = st.sidebar.number_input("Loan Amount ($)", value=555000, step=1000, key="apt_principal")
-    apt_rate = st.sidebar.number_input("Interest Rate (%)", value=5.49, step=0.01, key="apt_rate")
-    apt_term = st.sidebar.number_input("Loan Term (years)", value=27, step=1, key="apt_term")
+    apt_principal = st.sidebar.number_input("Loan Amount ($)", value=5550, step=1000, key="apt_principal")
+    apt_rate = st.sidebar.number_input("Interest Rate (%)", value=3, step=0.01, key="apt_rate")
+    apt_term = st.sidebar.number_input("Loan Term (years)", value=30, step=1, key="apt_term")
     
     # Investment loan inputs
     st.sidebar.subheader("🏘️ Investment Property")
-    inv_principal = st.sidebar.number_input("Loan Amount ($)", value=220000, step=1000, key="inv_principal")
-    inv_rate = st.sidebar.number_input("Interest Rate (%)", value=6.49, step=0.01, key="inv_rate")
-    inv_term = st.sidebar.number_input("Loan Term (years)", value=27.5, step=0.5, key="inv_term")
+    inv_principal = st.sidebar.number_input("Loan Amount ($)", value=100, step=1000, key="inv_principal")
+    inv_rate = st.sidebar.number_input("Interest Rate (%)", value=6.1, step=0.01, key="inv_rate")
+    inv_term = st.sidebar.number_input("Loan Term (years)", value=30, step=0.5, key="inv_term")
     
     # Create analyzers
     apartment_analyzer = LoanAnalyzer(apt_principal, apt_rate, apt_term)
